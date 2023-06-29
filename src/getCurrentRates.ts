@@ -31,6 +31,7 @@ const timeframeMap: Record<TimeframeType, string> = {
   h1: '1HOUR',
   h4: '4HOUR',
   d1: '1DAY',
+  w1: '1WEEK',
   mn1: '1MONTH'
 };
 

@@ -9,6 +9,7 @@ type RangeInferMap = { [key in TimeframeType]: TimeRange[] };
 
 const rangeInferMap: RangeInferMap = {
   mn1: ['year', 'month', 'day'],
+  w1: ['year', 'month', 'day'],
   d1: ['year', 'month', 'day'],
   h4: ['month', 'day', 'hour'],
   h1: ['month', 'day', 'hour'],
