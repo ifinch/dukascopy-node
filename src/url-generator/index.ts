@@ -28,6 +28,8 @@ function getUrl(
     url += `${priceType.toUpperCase()}_candles_day_1.bi5`;
   } else if (range === 'month') {
     url += `${monthPad}/${priceType.toUpperCase()}_candles_hour_1.bi5`;
+  } else if (range === 'week') {
+    url += `${monthPad}/${priceType.toUpperCase()}_candles_hour_1.bi5`;
   } else if (range === 'day') {
     url += `${monthPad}/${dayPad}/${priceType.toUpperCase()}_candles_min_1.bi5`;
   } else if (range === 'hour') {
@@ -91,7 +93,9 @@ function getDateLimit(startDate: Date, endDate: Date, timeframe: TimeframeType):
     dateLimit = getStartOfUtc(dateLimit, 'hour');
   } else if (timeframe === Timeframe.d1) {
     dateLimit = getStartOfUtc(dateLimit, 'day');
-  } else if (timeframe === Timeframe.mn1) {
+  } else if (timeframe === Timeframe.w1) {
+    dateLimit = getStartOfUtc(dateLimit, 'week');
+  }else if (timeframe === Timeframe.mn1) {
     dateLimit = getStartOfUtc(dateLimit, 'month');
   }
 
