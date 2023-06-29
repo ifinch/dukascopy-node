@@ -36,11 +36,7 @@ export enum Timeframe {
    */
   d1 = 'd1',
   /**
-<<<<<<< Updated upstream
    *  weekly `(week)` aggregation of OHLC price data
-=======
-   *  wwekly `(1 week)` aggregation of OHLC price data
->>>>>>> Stashed changes
    */
   w1 = 'w1',
   /**
