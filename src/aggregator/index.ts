@@ -184,8 +184,19 @@ export function aggregate({
         return [getOHLC({ input: data, filterFlats: ignoreFlats, startTs, volumes })];
       }
     }
+    
 
     if (fromTimeframe === Timeframe.d1) {
+      if (toTimeframe === Timeframe.w1) {
+        return splitArrayInChunks(data, 7).map((d, i) =>
+          getOHLC({
+            input: d,
+            filterFlats: ignoreFlats,
+            startTs: startTs + i * 7 * 24 * 60 * 1000,
+            volumes
+          })
+        );
+      }
       if (toTimeframe === Timeframe.mn1) {
         const monthlyOHLC = getMonthlyOHLCfromDays(data, volumes);
         return monthlyOHLC;

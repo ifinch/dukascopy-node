@@ -36,7 +36,7 @@ export enum Timeframe {
    */
   d1 = 'd1',
   /**
-   *  daily `(1 day)` aggregation of OHLC price data
+   *  weekly `(week)` aggregation of OHLC price data
    */
   w1 = 'w1',
   /**
