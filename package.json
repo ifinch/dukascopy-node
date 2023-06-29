@@ -31,7 +31,7 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Leo4815162342/dukascopy-node"
+		"url": "https://github.com/ifinch/dukascopy-node-my"
 	},
 	"homepage": "https://www.dukascopy-node.app",
 	"keywords": [
