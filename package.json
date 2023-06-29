@@ -9,7 +9,7 @@
 		"dist"
 	],
 	"bin": {
-		"dukascopy-cli-my": "./dist/cli/index.js",
+		"dukascopy-cli": "./dist/cli/index.js",
 		"dukascopy-node-my": "./dist/cli/index.js"
 	},
 	"scripts": {
